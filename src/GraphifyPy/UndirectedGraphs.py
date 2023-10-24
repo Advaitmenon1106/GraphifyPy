@@ -218,6 +218,7 @@ class UndirectedGraph:
             adj_mat.append(row)
         
         complement_graph= graph_reconstruction(adj_mat)
+        complement_graph.nodelist = self.nodelist
         return complement_graph
 
 def visualise(graph_obj):
